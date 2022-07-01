@@ -1,0 +1,13 @@
+.fondo{background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(113,31,31,1) 41%, rgba(252,176,69,1) 100%);
+
+}
+.fuente{
+    font-family: 'Courgette', cursive;
+    
+}
+.fuente2{
+    font-size: 100px;
+}
+
+
