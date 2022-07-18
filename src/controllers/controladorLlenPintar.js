@@ -23,9 +23,14 @@
         let nombreProducto=document.createElement("h3")
         nombreProducto.textContent=producto.nombre
 
+        let descripcion=document.createElement("p")
+        descripcion.classList.add("d-none")
+        descripcion.textContent=producto.descripcion
+
         let precioProducto=document.createElement("h2")
         precioProducto.classList.add("fw-bold")
         precioProducto.textContent="$"+producto.precio+"$"
+        
 
         // deteccion de mouse 
         columna.addEventListener("mouseover",function(evento){
@@ -34,11 +39,15 @@
         
         columna.addEventListener("mouseleave",function(evento){
             foto.src=producto.foto[0]
+        
         })
+
+    
 
         tarjeta.appendChild(foto)
         tarjeta.appendChild(nombreProducto)
         tarjeta.appendChild(precioProducto)
+        tarjeta.appendChild(descripcion)
         columna.appendChild(tarjeta)
         fila.appendChild(columna)
 
