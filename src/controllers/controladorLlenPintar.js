@@ -1,4 +1,4 @@
- export function pintarProductos(productos){
+                                                                                                                           export function pintarProductos(productos){
     
     //1. Crear una referencia en memoria que traiga el htmal sobre el cual voy a pintar 
     let fila=document.getElementById("fila")
@@ -41,7 +41,11 @@
             foto.src=producto.foto[0]
         
         })
-
+         
+        columna.addEventListener("click",function(evento){
+            foto.src=producto.foto[0]
+        
+        })
     
 
         tarjeta.appendChild(foto)
